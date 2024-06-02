@@ -1,16 +1,22 @@
 //react question
 
-import { useRef } from 'react';
-export default function Counter() {let ref = useRef(0);function handleClick() {ref.current = ref.current + 1;}return (<><div>Clicked + {ref.current} + times</div><button onClick={handleClick}>			Click me!
-		</button></>);}
+import { useRef } from "react";
+export default function Counter() {
+  let ref = useRef(0);
+  function handleClick() {
+    ref.current = ref.current + 1;
+  }
+  return (
+    <>
+      <div>Clicked + {ref.current} + times</div>
+      <button onClick={handleClick}> Click me!</button>
+    </>
+  );
+}
 function makeAdder(x) {
-
   return function (y) {
-
     return x + y;
-
   };
-
 }
 
 //
@@ -60,8 +66,8 @@ let b = [1, 3];
 let c = a.toString();
 let d = b.toString();
 console.log(c, d);
-console.log(a === b);//false
-console.log(c === d);//true
+console.log(a === b); //false
+console.log(c === d); //true
 
 //4th question
 
@@ -80,4 +86,4 @@ let obj1 = {};
 
 let obj2 = {};
 
-console.log(obj1 === obj2);//false
+console.log(obj1 === obj2); //false
